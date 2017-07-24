@@ -5,6 +5,9 @@ const app = express();
 // parses data with the content typ of the application JSON
 app.use(parser.urlencoded({ extended:false }));
 
+// middleware to serve static assets.
+app.use(express.static('public'));
+
 const posts = [
 	{
 		id: 1,

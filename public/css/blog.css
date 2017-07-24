@@ -1,0 +1,16 @@
+
+
+/* BLOG HOMEPAGE */
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.headerblock {
+  margin-top: 10px;
+  border: solid 1px #4d4d4d;
+  background-color: #c2c2c2;
+  text-align: center;
+  color: #4d4d4d;
+  border-radius: 5px;
+}
