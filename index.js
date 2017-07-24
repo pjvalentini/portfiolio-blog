@@ -61,7 +61,7 @@ app.get("/blogpost/:id", (req, res) => {
 	// Find the post in the posts array
 	const post = posts.filter((post) => {
 		return post.id === req.params.id;
-	})[0];
+	});
 
 	// render the `post.ejs` template with the post content
 	res.render("blogpost", {
