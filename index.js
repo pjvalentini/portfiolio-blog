@@ -33,6 +33,18 @@ const posts = [
 		title: 'Event Emitters',
 		body: 'Blog post number 4',
 	},
+	{
+		id: 5,
+		author: 'Jen Jones',
+		title: 'Bootstrap 101',
+		body: 'Blog post number 5',
+	},
+	{
+		id: 6,
+		author: 'John Doe',
+		title: 'Coding in Aviation',
+		body: 'Blog post number 6',
+	},
 ];
 
 // Sets the view engine to ejs
