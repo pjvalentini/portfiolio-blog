@@ -58,8 +58,8 @@ app.get("/blogpost/:id", (req, res) => {
 
 
 // This is a catch....
-app.get('*', function(request, response) {
-	response.status(404).send('Page not found!');
+app.get('*', function(req, res) {
+	res.status(404).send('Page not found!');
 });
 
 const server = app.listen(3000, () => {
