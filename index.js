@@ -50,6 +50,24 @@ const posts = [
 // Sets the view engine to ejs
 app.set("view engine", "ejs");
 
+
+// Index page route setup
+app.get("/", (req, res) => {
+	// Render index.ejs page
+	res.render("index");
+});
+
+app.get("/about", (req, res) => {
+	// Render index.ejs page
+	res.render("about");
+});
+
+app.get("/contact", (req, res) => {
+	// Render index.ejs page
+	res.render("contact");
+});
+
+
 // blog home page
 app.get("/bloghome", (req, res) => {
 	// Render bloghome.ejs with the list of posts
@@ -59,15 +77,14 @@ app.get("/bloghome", (req, res) => {
 // blog post page
 app.get("/blogpost/:id", (req, res) => {
 	// Find the post in the posts array
-	const post = posts.filter((post) => {
-		return post.id === req.params.id;
-	});
-
+		const post = posts.filter((post) => { // eslint-disable-line
+			return post.id == req.params.id; // eslint-disable-line
+		});
 	// render the `post.ejs` template with the post content
 	res.render("blogpost", {
-		author: post.author,
-		title: post.title,
-		body: post.body,
+		author: post[0].author,
+		title: post[0].title,
+		body: post[0].body,
 	});
 });
 
