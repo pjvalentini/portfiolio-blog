@@ -45,6 +45,18 @@ const posts = [
 		title: 'Coding in Aviation',
 		body: 'Blog post number 6',
 	},
+	{
+		id: 7,
+		author: 'PJ Valentini',
+		title: 'CSS Tricks',
+		body: 'Blog post number 7',
+	},
+	{
+		id: 8,
+		author: 'PJ Valentini',
+		title: 'JavaScript for beginners',
+		body: 'Blog post number 8',
+	},
 ];
 
 // Sets the view engine to ejs
@@ -57,11 +69,13 @@ app.get("/", (req, res) => {
 	res.render("index");
 });
 
+// About Page route setup
 app.get("/about", (req, res) => {
 	// Render index.ejs page
 	res.render("about");
 });
 
+// Contact Page route setup
 app.get("/contact", (req, res) => {
 	// Render index.ejs page
 	res.render("contact");
