@@ -9,6 +9,7 @@
 .headerblock {
   height: 300px;
   margin-top: 10px;
+  /*background-image: url("blog-hero.png");*/
   background-color: #c2c2c2;
   text-align: center;
   color: #4d4d4d;

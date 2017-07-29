@@ -13,7 +13,8 @@
 <body>
     <div class="container">
         <% include partials/blognavbar %>
-        <img class="img-responsive" src="http://placehold.it/900x500"/>
+        <%# <img class="img-responsive" src="http://placehold.it/900x500"/>%>
+        <img class="img-responsive" src='<%= img %>' />
         <div>
           <h2><%= title %></h2>
           <p>by <a href="#"><%= author %></a></p>
