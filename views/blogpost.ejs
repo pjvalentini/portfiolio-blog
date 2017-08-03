@@ -12,7 +12,9 @@
 
 <body>
     <div class="container">
+
         <% include partials/blognavbar %>
+
         <%# <img class="img-responsive" src="http://placehold.it/900x500"/>%>
         <img class="img-responsive" src='<%= img %>' />
         <div>
@@ -21,6 +23,9 @@
           <p><%= body %></p>
           <hr>
         </div>
+
         <% include partials/form-comments %>
+
     </div>
+
     <% include partials/blogfooter %>
