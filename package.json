@@ -13,5 +13,14 @@
     "ejs": "^2.5.6",
     "express": "^4.15.3",
     "jsonfile": "^3.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjvalentini/portfiolio-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pjvalentini/portfiolio-blog/issues"
+  },
+  "homepage": "https://github.com/pjvalentini/portfiolio-blog#readme"
 }

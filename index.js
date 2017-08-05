@@ -1,8 +1,9 @@
 const express = require("express");
 const parser = require("body-parser");
 const app = express();
+// var articles;
 
-// parses data with the content typ of the application JSON
+// parses data with the content type of the application JSON
 app.use(parser.urlencoded({ extended:false }));
 app.use(parser.json());
 
@@ -32,28 +33,11 @@ app.get("/contact", (req, res) => {
 	res.render("contact");
 });
 
-app.get('/articles', articlesController.get);
-
-// blog home page
-app.get("/bloghome", (req, res) => {
-	// Render bloghome.ejs with the list of posts
-	res.render("bloghome");
-});
+// blog homepage
+app.get('/bloghome', articlesController.get);
 
 // blog post page
-app.get("/blogpost/:id", (req, res) => {
-	// Find the article in the articles.json file.
-		 const article = articles.filter((article) => {
-			return article.id == req.params.id; // eslint-disable-line
-		});
-	// render the blogpost.ejs template with the articles content
-	res.render("blogpost", {
-		img: article[0].img,
-		author: article[0].author,
-		title: article[0].title,
-		body: article[0].body,
-	});
-});
+app.get("/blogpost/:id", articlesController.show);
 
 
 // This is a catch....

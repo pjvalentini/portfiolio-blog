@@ -16,11 +16,11 @@
         <% include partials/blognavbar %>
 
         <%# <img class="img-responsive" src="http://placehold.it/900x500"/>%>
-        <img class="img-responsive" src='<%= img %>' />
+        <img class="img-responsive" src='<%= article.img %>' />
         <div>
-          <h2><%= title %></h2>
-          <p>by <a href="#"><%= author %></a></p>
-          <p><%= body %></p>
+          <h2><%= article.title %></h2>
+          <p>by <a href="#"><%= article.author %></a></p>
+          <p><%= article.body %></p>
           <hr>
         </div>
 
