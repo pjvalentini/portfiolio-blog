@@ -1,6 +1,8 @@
+// requiring the jsonfile dependency to read and write the json file.
 const jsonfile = require('jsonfile');
 // console.log(jsonfile);
 
+// this is the function that is getting the json from the models and reading it.
 const get = function(callback) {
 	jsonfile.readFile('./models/articles.json', callback);
 };

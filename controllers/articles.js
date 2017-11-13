@@ -1,6 +1,6 @@
 const articles = require('../models/articles');
 const defaultMessage = 'Sorry, cannot find that article.';
-// console.log(articles[1]);
+console.log(articles);
 
 // (Get) a list of articles from the model
 module.exports.get = function(request, response) {
