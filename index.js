@@ -40,7 +40,7 @@ app.get('/bloghome', articlesController.get);
 app.get("/blogpost/:id", articlesController.show);
 
 // blog post submit route (building the code for this route...)
-// app.get("/blogpost/:id/submit", articlesController.show);
+app.get("/blogpost/:id/submit", articlesController.show);
 
 // adding a catch
 app.get('*', function(req, res) {
