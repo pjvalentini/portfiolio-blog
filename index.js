@@ -33,18 +33,21 @@ app.get("/contact", (req, res) => {
 	res.render("contact");
 });
 
-// blog homepage
+// blog homepage route
 app.get('/bloghome', articlesController.get);
 
-// blog post page
+// blog post page route
 app.get("/blogpost/:id", articlesController.show);
 
+// blog post submit route (building the code for this route...)
+// app.get("/blogpost/:id/submit", articlesController.show);
 
-// This is a catch....
+// adding a catch
 app.get('*', function(req, res) {
 	res.status(404).send('Page not found!');
 });
 
+// server setup on localhost:3000.
 const server = app.listen(3000, () => {
 	console.log('server started on port', server.address().port);
 });
