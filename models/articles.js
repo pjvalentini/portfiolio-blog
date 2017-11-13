@@ -16,5 +16,6 @@ const getArticleById = function(id, callback) {
 	});
 };
 
+
 module.exports.get = get;
 module.exports.getArticleById = getArticleById;
