@@ -5,7 +5,7 @@ console.log(articles);
 // (Get) a list of articles from the model
 module.exports.get = function(request, response) {
 	articles.get(function(err, list) {
-		// console.log(list);
+		// console.log(list); // show me all my articles from the model in the terminal.
 		if (err) {
 			const message = err.errno === -2 ? defaultMessage : 'Try again later';
 			return response.render('404', { message: message });
